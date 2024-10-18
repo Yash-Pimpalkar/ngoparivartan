@@ -12,9 +12,8 @@ const Logout = () => {
     localStorage.removeItem('userData');
 
     // Redirect to login page
-    setUserData("")
     navigate('/login');
-  
+    setUserData("")
   };
 
   return (

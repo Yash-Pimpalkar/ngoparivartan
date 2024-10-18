@@ -30,7 +30,7 @@ function App() {
           {/* Admin-Only Routes */}
           {isLoggedIn && isAdmin ? (
             <>
-              <Route path="/admin" element={<AdminHome />} />
+              <Route path="/" element={<AdminHome />} />
               <Route path="/admin/paymenthistory" element={<PaymentsDashboard />} />
             </>
           ) : (
@@ -47,7 +47,7 @@ function App() {
             <Route path="*" element={<Navigate to="/login" />} /> // Redirect if not logged in
           )}
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </div>
   );

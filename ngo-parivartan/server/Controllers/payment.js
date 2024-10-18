@@ -15,7 +15,7 @@ export const donate = async (req, res) => {
         // Create a PaymentIntent using Stripe API
         const paymentIntent = await stripe.paymentIntents.create({
             amount: amount * 100, // Convert amount to smallest currency unit (paise)
-            currency: 'usd',      // Change to INR for Indian Rupees
+            currency: 'inr',      // Change to INR for Indian Rupees
             metadata: { userId },  // Attach the userId to the payment intent
         });
 
@@ -24,7 +24,7 @@ export const donate = async (req, res) => {
             userId,
             email,
             amount,
-            currency: 'usd',
+            currency: 'inr',
             status: paymentIntent.status,
             paymentIntentId: paymentIntent.id,
         });

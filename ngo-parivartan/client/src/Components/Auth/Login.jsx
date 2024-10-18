@@ -8,8 +8,8 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+const [userData,setUserData]=useState(null)
 
-  const { setUserData } = useContext(AppContext);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -38,10 +38,10 @@ const Login = () => {
 
         alert(`Welcome ${response.data.message}`);
         if(userData.isAdmin){
-            navigate("/admin");
+            navigate("/admin/paymenthistory");
             window.location.reload()
         }else{
-        navigate("/");
+        navigate("/donate");
         window.location.reload()
         }
        

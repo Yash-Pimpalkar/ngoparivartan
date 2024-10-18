@@ -98,7 +98,7 @@ const Navbar = () => {
                   userData.isAdmin ? (
                     // Admin Links
                     <>
-                      <NavLink
+                      {/* <NavLink
                         to="/admin"
                         className={({ isActive }) =>
                           `rounded-md px-3 py-2 text-sm font-medium ${
@@ -107,7 +107,7 @@ const Navbar = () => {
                         }
                       >
                         Admin Home
-                      </NavLink>
+                      </NavLink> */}
                       <NavLink
                         to="/donate"
                         className={({ isActive }) =>
@@ -118,7 +118,7 @@ const Navbar = () => {
                       >
                         Donation
                       </NavLink>
-                      <NavLink
+                      {/* <NavLink
                         to="/admin/volunteer"
                         className={({ isActive }) =>
                           `rounded-md px-3 py-2 text-sm font-medium ${
@@ -127,7 +127,7 @@ const Navbar = () => {
                         }
                       >
                         Volunteer
-                      </NavLink>
+                      </NavLink> */}
                       <NavLink
                         to="/admin/paymenthistory"
                         className={({ isActive }) =>
@@ -152,7 +152,7 @@ const Navbar = () => {
                       >
                         Donation
                       </NavLink>
-                      <NavLink
+                      {/* <NavLink
                         to="/createvolunteer"
                         className={({ isActive }) =>
                           `rounded-md px-3 py-2 text-sm font-medium ${
@@ -161,7 +161,7 @@ const Navbar = () => {
                         }
                       >
                         Volunteer
-                      </NavLink>
+                      </NavLink> */}
                     </>
                   )
                 ) : (
